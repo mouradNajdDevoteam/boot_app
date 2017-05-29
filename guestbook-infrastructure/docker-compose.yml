@@ -1,0 +1,12 @@
+version: '2'
+services:
+    frontend:
+       image: guestbook-frontend
+       container_name: gb-frontend
+       ports:
+          - 8081:8081
+    backend:
+       image: guestbook-backend
+       container_name: gb-backend
+       ports:
+          - 8080:8080
